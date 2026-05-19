@@ -1,0 +1,40 @@
+[
+    {
+        "severity": "BLOCKER",
+        "issue": "Invalid table name",
+        "table": "customer-data",
+        "recommendation": "Rename table using only A-Z a-z 0-9 _"
+    },
+    {
+        "severity": "BLOCKER",
+        "issue": "Unsupported extension",
+        "extension": "hstore",
+        "recommendation": "Replace unsupported extension"
+    },
+    {
+        "severity": "WARNING",
+        "issue": "Null byte validation failed",
+        "schema": "public",
+        "table": "customers",
+        "error": "sqlalchemy.cyextension.immutabledict.immutabledict is not a sequence"
+    },
+    {
+        "severity": "WARNING",
+        "issue": "Stored procedure detected",
+        "procedure": "sample_proc",
+        "recommendation": "Rewrite procedure logic externally"
+    },
+    {
+        "severity": "WARNING",
+        "issue": "Stored procedure detected",
+        "procedure": "audit_trigger",
+        "recommendation": "Rewrite procedure logic externally"
+    },
+    {
+        "severity": "WARNING",
+        "issue": "Trigger detected",
+        "table": "customers",
+        "trigger": "customer_trigger",
+        "recommendation": "Rewrite trigger logic externally"
+    }
+]

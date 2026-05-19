@@ -1,0 +1,9 @@
+psycopg2-binary
+sqlalchemy
+pandas
+pyyaml
+jinja2
+weasyprint
+tabulate
+jinja2
+weasyprint

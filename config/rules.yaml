@@ -1,0 +1,7 @@
+unsupported_extensions:
+  - hstore
+  - postgis
+
+table_size_threshold_gb: 0.01
+
+naming_pattern: "^[A-Za-z0-9_]+$"
