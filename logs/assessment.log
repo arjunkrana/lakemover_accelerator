@@ -46,3 +46,224 @@ LINE 3:     FROM customer-data
 2026-05-19 13:43:37,266 INFO huge_table migration completed
 2026-05-19 13:43:39,768 INFO customers migration completed
 2026-05-19 13:43:39,768 INFO Migration Accelerator Completed
+2026-05-20 11:24:38,335 INFO Migration Accelerator Started
+2026-05-20 11:24:38,897 INFO Source PostgreSQL Connected
+2026-05-20 11:24:38,897 INFO Lakebase Connected
+2026-05-20 11:24:39,494 INFO Tables Extracted: 4
+2026-05-20 11:24:39,497 INFO Assessment Started
+2026-05-20 11:24:40,460 INFO Assessment Completed
+2026-05-20 11:24:40,460 INFO Readiness Score: 40
+2026-05-20 11:26:51,940 INFO Migration Accelerator Started
+2026-05-20 11:26:52,193 INFO Source PostgreSQL Connected
+2026-05-20 11:26:52,198 INFO Lakebase Connected
+2026-05-20 11:26:52,598 INFO Tables Extracted: 4
+2026-05-20 11:26:52,598 INFO Assessment Started
+2026-05-20 11:26:52,818 INFO Assessment Completed
+2026-05-20 11:26:52,820 INFO Readiness Score: 40
+2026-05-20 11:26:52,832 INFO Assessment Report Generated
+2026-05-20 11:26:52,835 INFO Schema Migration Started
+2026-05-20 11:26:58,632 INFO Schema Migration Completed
+2026-05-20 11:26:58,632 INFO Data Migration Started
+2026-05-20 11:26:58,632 INFO Processing Table: orders
+2026-05-20 11:27:00,028 INFO Row Validation: {'table': 'orders', 'status': 'FAILED', 'error': '(psycopg2.OperationalError) connection to server at "ep-hidden-lab-d8xz9gfs.database.us-east-2.cloud.databricks.com" (18.97.131.208), port 5432 failed: ERROR:  password authentication failed for user \'arjun.k.rana@v4c.ai\'\n\n(Background on this error at: https://sqlalche.me/e/20/e3q8)'}
+2026-05-20 11:27:00,030 ERROR orders migration failed: 'source_count'
+2026-05-20 11:28:44,713 INFO Migration Accelerator Started
+2026-05-20 11:28:44,989 INFO Source PostgreSQL Connected
+2026-05-20 11:28:45,008 INFO Lakebase Connected
+2026-05-20 11:28:45,359 INFO Tables Extracted: 4
+2026-05-20 11:28:45,359 INFO Assessment Started
+2026-05-20 11:28:45,612 INFO Assessment Completed
+2026-05-20 11:28:45,612 INFO Readiness Score: 40
+2026-05-20 11:28:45,629 INFO Assessment Report Generated
+2026-05-20 11:28:45,630 INFO Schema Migration Started
+2026-05-20 11:28:52,359 INFO Schema Migration Completed
+2026-05-20 11:28:52,359 INFO Data Migration Started
+2026-05-20 11:28:52,359 INFO Processing Table: orders
+2026-05-20 11:28:53,295 INFO Row Validation: {'table': 'orders', 'source_count': np.int64(0), 'target_count': np.int64(0), 'status': 'PASS'}
+2026-05-20 11:28:53,295 INFO Drift Detection: {'status': 'NO_DRIFT'}
+2026-05-20 11:28:54,219 INFO Checksum Validation: {'table': 'orders', 'source_checksum': 'd41d8cd98f00b204e9800998ecf8427e', 'target_checksum': 'd41d8cd98f00b204e9800998ecf8427e', 'status': 'PASS'}
+2026-05-20 11:28:55,139 INFO Sample Diff Validation: {'table': 'orders', 'mismatches': 0, 'status': 'PASS'}
+2026-05-20 11:28:55,149 ERROR orders migration failed: Object of type int64 is not JSON serializable
+2026-05-20 11:28:55,864 INFO Processing Table: customer-data
+2026-05-20 11:28:56,799 INFO Row Validation: {'table': 'customer_data', 'source_count': np.int64(0), 'target_count': np.int64(0), 'status': 'PASS'}
+2026-05-20 11:28:56,799 INFO Drift Detection: {'status': 'NO_DRIFT'}
+2026-05-20 11:28:57,723 INFO Checksum Validation: {'table': 'customer_data', 'source_checksum': 'd41d8cd98f00b204e9800998ecf8427e', 'target_checksum': 'd41d8cd98f00b204e9800998ecf8427e', 'status': 'PASS'}
+2026-05-20 11:28:58,639 INFO Sample Diff Validation: {'table': 'customer-data', 'mismatches': 0, 'status': 'PASS'}
+2026-05-20 11:28:58,639 ERROR customer-data migration failed: Object of type int64 is not JSON serializable
+2026-05-20 11:31:43,159 INFO Migration Accelerator Started
+2026-05-20 11:31:43,410 INFO Source PostgreSQL Connected
+2026-05-20 11:31:43,420 INFO Lakebase Connected
+2026-05-20 11:31:43,887 INFO Tables Extracted: 4
+2026-05-20 11:31:43,889 INFO Assessment Started
+2026-05-20 11:31:44,160 INFO Assessment Completed
+2026-05-20 11:31:44,160 INFO Readiness Score: 40
+2026-05-20 11:31:44,180 INFO Assessment Report Generated
+2026-05-20 11:31:44,184 INFO Schema Migration Started
+2026-05-20 11:31:51,461 INFO Schema Migration Completed
+2026-05-20 11:31:51,461 INFO Data Migration Started
+2026-05-20 11:31:51,465 INFO Processing Table: orders
+2026-05-20 11:31:52,480 INFO Row Validation: {'table': 'orders', 'source_count': np.int64(0), 'target_count': np.int64(0), 'status': 'PASS'}
+2026-05-20 11:31:52,480 INFO Drift Detection: {'status': 'NO_DRIFT'}
+2026-05-20 11:31:53,457 INFO Checksum Validation: {'table': 'orders', 'source_checksum': 'd41d8cd98f00b204e9800998ecf8427e', 'target_checksum': 'd41d8cd98f00b204e9800998ecf8427e', 'status': 'PASS'}
+2026-05-20 11:31:54,792 INFO Sample Diff Validation: {'table': 'orders', 'mismatches': 0, 'status': 'PASS'}
+2026-05-20 11:31:54,801 INFO orders migration completed
+2026-05-20 11:31:54,801 INFO Processing Table: customer-data
+2026-05-20 11:31:55,780 INFO Row Validation: {'table': 'customer_data', 'source_count': np.int64(0), 'target_count': np.int64(0), 'status': 'PASS'}
+2026-05-20 11:31:55,780 INFO Drift Detection: {'status': 'NO_DRIFT'}
+2026-05-20 11:31:56,750 INFO Checksum Validation: {'table': 'customer_data', 'source_checksum': 'd41d8cd98f00b204e9800998ecf8427e', 'target_checksum': 'd41d8cd98f00b204e9800998ecf8427e', 'status': 'PASS'}
+2026-05-20 11:31:57,722 INFO Sample Diff Validation: {'table': 'customer-data', 'mismatches': 0, 'status': 'PASS'}
+2026-05-20 11:31:57,730 INFO customer-data migration completed
+2026-05-20 11:31:57,730 INFO Processing Table: huge_table
+2026-05-20 11:36:48,514 INFO Row Validation: {'table': 'huge_table', 'source_count': np.int64(1000000), 'target_count': np.int64(3000000), 'status': 'FAIL'}
+2026-05-20 11:36:48,514 INFO Drift Detection: {'status': 'DRIFT_DETECTED', 'difference': np.int64(-2000000)}
+2026-05-20 11:45:35,923 INFO Checksum Validation: {'table': 'huge_table', 'source_checksum': '9e1dba9614a099385f9529543c6a507d', 'target_checksum': '131e934fddd87988617b0f8e161eba93', 'status': 'FAIL'}
+2026-05-20 11:46:50,679 INFO Sample Diff Validation: {'table': 'huge_table', 'mismatches': 0, 'status': 'PASS'}
+2026-05-20 11:46:50,687 INFO huge_table migration completed
+2026-05-20 11:46:51,452 WARNING Rollback completed: huge_table
+2026-05-20 11:46:51,452 INFO Processing Table: customers
+2026-05-20 11:46:52,493 INFO Row Validation: {'table': 'customers', 'source_count': np.int64(0), 'target_count': np.int64(0), 'status': 'PASS'}
+2026-05-20 11:46:52,493 INFO Drift Detection: {'status': 'NO_DRIFT'}
+2026-05-20 11:46:53,509 INFO Checksum Validation: {'table': 'customers', 'source_checksum': 'd41d8cd98f00b204e9800998ecf8427e', 'target_checksum': 'd41d8cd98f00b204e9800998ecf8427e', 'status': 'PASS'}
+2026-05-20 11:46:54,507 INFO Sample Diff Validation: {'table': 'customers', 'mismatches': 0, 'status': 'PASS'}
+2026-05-20 11:46:54,517 INFO customers migration completed
+2026-05-20 11:46:54,521 INFO Migration Accelerator Completed
+2026-05-20 11:55:12,901 INFO Migration Accelerator Started
+2026-05-20 11:55:13,073 INFO Source PostgreSQL Connected
+2026-05-20 11:55:13,073 INFO Lakebase Connected
+2026-05-20 11:55:13,331 INFO Tables Extracted: 4
+2026-05-20 11:55:13,331 INFO Assessment Started
+2026-05-20 11:55:13,522 INFO Assessment Completed
+2026-05-20 11:55:13,522 INFO Readiness Score: 40
+2026-05-20 11:55:13,531 INFO Assessment Report Generated
+2026-05-20 12:17:10,726 INFO Migration Accelerator Started
+2026-05-20 12:17:10,896 INFO Source PostgreSQL Connected
+2026-05-20 12:17:10,899 INFO Lakebase Connected
+2026-05-20 12:17:11,281 INFO Tables Extracted: 4
+2026-05-20 12:17:11,281 INFO Assessment Started
+2026-05-20 12:17:11,517 INFO Assessment Completed
+2026-05-20 12:17:11,518 INFO Readiness Score: 40
+2026-05-20 12:17:11,527 INFO Assessment Report Generated
+2026-05-20 12:17:16,260 INFO SQL Pipeline Assessment Completed
+2026-05-20 12:17:16,262 ERROR Migration blocked due to blockers
+2026-05-20 12:23:03,901 INFO Migration Accelerator Started
+2026-05-20 12:23:03,986 INFO Source PostgreSQL Connected
+2026-05-20 12:23:03,988 INFO Lakebase Connected
+2026-05-20 12:23:04,150 INFO Tables Extracted: 4
+2026-05-20 12:23:04,150 INFO Assessment Started
+2026-05-20 12:23:04,271 INFO Assessment Completed
+2026-05-20 12:23:04,271 INFO Readiness Score: 40
+2026-05-20 12:24:33,903 INFO Migration Accelerator Started
+2026-05-20 12:24:33,991 INFO Source PostgreSQL Connected
+2026-05-20 12:24:33,991 INFO Lakebase Connected
+2026-05-20 12:24:34,215 INFO Tables Extracted: 4
+2026-05-20 12:24:34,215 INFO Assessment Started
+2026-05-20 12:24:34,351 INFO Assessment Completed
+2026-05-20 12:24:34,351 INFO Readiness Score: 40
+2026-05-20 12:24:34,371 INFO Assessment Report Generated
+2026-05-20 12:24:37,095 WARNING Invalid pipeline path
+2026-05-20 12:24:39,481 INFO Schema Migration Started
+2026-05-20 12:24:46,721 INFO Schema Migration Completed
+2026-05-20 12:24:46,721 INFO Data Migration Started
+2026-05-20 12:24:46,721 INFO Processing Table: orders
+2026-05-20 12:24:50,301 INFO Processing Table: customer-data
+2026-05-20 12:24:53,856 INFO Processing Table: huge_table
+2026-05-20 12:38:16,602 INFO Processing Table: customers
+2026-05-20 12:38:20,228 INFO Migration Accelerator Completed
+2026-05-20 13:03:24,543 INFO Migration Accelerator Started
+2026-05-20 13:03:24,839 INFO Source PostgreSQL Connected
+2026-05-20 13:03:24,849 INFO Lakebase Connected
+2026-05-20 13:03:25,272 INFO Tables Extracted: 4
+2026-05-20 13:03:25,272 INFO Assessment Started
+2026-05-20 13:03:25,503 INFO Assessment Completed
+2026-05-20 13:03:25,503 INFO Readiness Score: 40
+2026-05-20 13:03:25,509 INFO Assessment Report Generated
+2026-05-20 13:03:27,870 WARNING Invalid pipeline path
+2026-05-20 13:03:30,999 INFO Schema Migration Started
+2026-05-20 13:03:38,452 INFO Schema Migration Completed
+2026-05-20 13:03:38,453 INFO Data Migration Started
+2026-05-20 13:03:38,453 INFO Processing Table: orders
+2026-05-20 13:03:59,490 ERROR orders migration failed: Maximum retries exceeded
+2026-05-20 13:13:35,296 INFO Migration Accelerator Started
+2026-05-20 13:13:35,772 INFO Source PostgreSQL Connected
+2026-05-20 13:13:35,788 INFO Lakebase Connected
+2026-05-20 13:13:36,464 INFO Tables Extracted: 4
+2026-05-20 13:13:36,466 INFO Assessment Started
+2026-05-20 13:13:36,864 INFO Assessment Completed
+2026-05-20 13:13:36,864 INFO Readiness Score: 40
+2026-05-20 13:13:36,885 INFO Assessment Report Generated
+2026-05-20 13:13:39,994 WARNING Invalid pipeline path
+2026-05-20 13:13:41,593 INFO Schema Migration Started
+2026-05-20 13:13:49,546 INFO Schema Migration Completed
+2026-05-20 13:13:49,547 INFO Data Migration Started
+2026-05-20 13:13:49,552 INFO Processing Table: orders
+2026-05-20 13:14:09,688 ERROR orders migration failed: Maximum retries exceeded
+2026-05-20 13:22:30,728 INFO Migration Accelerator Started
+2026-05-20 13:22:30,908 INFO Source PostgreSQL Connected
+2026-05-20 13:22:30,908 INFO Lakebase Connected
+2026-05-20 13:22:31,357 INFO Tables Extracted: 4
+2026-05-20 13:22:31,357 INFO Assessment Started
+2026-05-20 13:22:31,738 INFO Assessment Completed
+2026-05-20 13:22:31,738 INFO Readiness Score: 40
+2026-05-20 13:22:31,759 INFO Assessment Report Generated
+2026-05-20 13:22:33,758 WARNING Invalid pipeline path
+2026-05-20 13:22:35,398 INFO Schema Migration Started
+2026-05-20 13:22:44,830 INFO Schema Migration Completed
+2026-05-20 13:22:44,830 INFO Data Migration Started
+2026-05-20 13:22:44,830 INFO Processing Table: orders
+2026-05-20 13:22:47,200 ERROR orders migration failed: 0
+2026-05-20 13:22:48,219 INFO Processing Table: customer-data
+2026-05-20 13:22:50,488 ERROR customer-data migration failed: 0
+2026-05-20 13:22:51,488 INFO Processing Table: huge_table
+2026-05-20 13:29:07,127 ERROR huge_table migration failed: 0
+2026-05-20 13:29:08,121 INFO Processing Table: customers
+2026-05-20 13:29:10,420 ERROR customers migration failed: 0
+2026-05-20 13:29:11,423 INFO Migration Accelerator Completed
+2026-05-20 14:04:31,457 INFO Migration Accelerator Started
+2026-05-20 14:04:31,783 INFO Source PostgreSQL Connected
+2026-05-20 14:04:31,786 INFO Lakebase Connected
+2026-05-20 14:04:32,306 INFO Tables Extracted: 4
+2026-05-20 14:04:32,306 INFO Assessment Started
+2026-05-20 14:04:32,801 INFO Assessment Completed
+2026-05-20 14:04:32,801 INFO Readiness Score: 40
+2026-05-20 14:04:32,814 INFO Assessment Report Generated
+2026-05-20 14:04:59,763 WARNING Invalid pipeline path
+2026-05-20 14:05:01,644 INFO Schema Migration Started
+2026-05-20 14:05:11,848 INFO Schema Migration Completed
+2026-05-20 14:05:11,848 INFO Data Migration Started
+2026-05-20 14:05:11,848 INFO Processing Table: orders
+2026-05-20 14:05:17,302 INFO Processing Table: customer-data
+2026-05-20 14:05:23,034 INFO Processing Table: huge_table
+2026-05-20 14:18:17,640 WARNING Rollback completed: huge_table
+2026-05-20 14:18:17,640 INFO Processing Table: customers
+2026-05-20 14:18:22,982 INFO Migration Accelerator Completed
+2026-05-20 14:27:12,486 INFO Migration Accelerator Started
+2026-05-20 14:27:12,575 INFO Source PostgreSQL Connected
+2026-05-20 14:27:12,575 INFO Lakebase Connected
+2026-05-20 14:27:12,824 INFO Tables Extracted: 4
+2026-05-20 14:27:12,825 INFO Assessment Started
+2026-05-20 14:27:13,035 INFO Assessment Completed
+2026-05-20 14:27:13,035 INFO Readiness Score: 40
+2026-05-20 14:27:13,044 INFO Assessment Report Generated
+2026-05-20 14:27:15,423 WARNING Invalid pipeline path
+2026-05-20 14:27:18,391 INFO Schema Migration Started
+2026-05-20 14:27:27,642 INFO Schema Migration Completed
+2026-05-20 14:27:27,642 INFO Data Migration Started
+2026-05-20 14:27:27,642 INFO Processing Table: orders
+2026-05-20 14:27:49,246 ERROR orders migration failed: Maximum retries exceeded
+2026-05-20 14:27:57,978 INFO Migration Accelerator Started
+2026-05-20 14:27:58,061 INFO Source PostgreSQL Connected
+2026-05-20 14:27:58,061 INFO Lakebase Connected
+2026-05-20 14:27:58,288 INFO Tables Extracted: 4
+2026-05-20 14:27:58,289 INFO Assessment Started
+2026-05-20 14:27:58,474 INFO Assessment Completed
+2026-05-20 14:27:58,489 INFO Readiness Score: 40
+2026-05-20 14:27:58,495 INFO Assessment Report Generated
+2026-05-20 14:28:03,326 INFO Schema Migration Started
+2026-05-20 14:28:13,725 INFO Schema Migration Completed
+2026-05-20 14:28:13,725 INFO Data Migration Started
+2026-05-20 14:28:13,725 INFO Processing Table: orders
+2026-05-20 14:28:19,088 INFO Processing Table: customer-data
+2026-05-20 14:28:24,475 INFO Processing Table: huge_table
+2026-05-20 14:42:14,962 WARNING huge_table checksum mismatch
+2026-05-20 14:42:14,969 INFO Processing Table: customers
+2026-05-20 14:42:20,049 INFO Migration Accelerator Completed

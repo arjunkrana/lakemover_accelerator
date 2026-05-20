@@ -1,12 +1,12 @@
-source_host: localhost
-source_port: 5432
-source_database: lakemover_test
-source_username: postgres
-source_password: root
+# source_host: localhost
+# source_port: 5432
+# source_database: lakemover_test
+# source_username: postgres
+# source_password: root
 
-lakebase_host: ep-hidden-lab-d8xz9gfs.database.us-east-2.cloud.databricks.com
-lakebase_port: 5432
-lakebase_database: databricks_postgres
-lakebase_username: arjun.k.rana@v4c.ai
-lakebase_password: 
-lakebase_sslmode: require
+# lakebase_host: ep-hidden-lab-d8xz9gfs.database.us-east-2.cloud.databricks.com
+# lakebase_port: 5432
+# lakebase_database: databricks_postgres
+# lakebase_username: arjun.k.rana@v4c.ai
+# lakebase_password: 
+# lakebase_sslmode: require
